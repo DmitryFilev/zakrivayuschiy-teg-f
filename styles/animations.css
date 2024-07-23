@@ -12,3 +12,227 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+@keyframes cursor {
+    0% {
+      translate: 0px;
+    }
+  
+    100% {
+      translate: 4px;
+    }
+}
+
+.contour {
+  fill: var(--heart-contour-color);
+  transition: fill 0.1s linear;
+}
+  
+.like-icon .core {
+  fill: var(--bckg-item-color);
+  transition: fill 0.3s 0.05s;
+}
+  
+.like-icon .main-body {
+  fill: var(--bckg-item-color);
+  transition: fill 0.3s;
+}
+  
+.sparks {
+    opacity: 0;
+    fill: var(--heart-sparks-color);
+}
+  
+.like-icon:hover .core{
+    fill: var(--heart-contour-color);
+    transition: fill 0.3s;
+  }
+  
+.like-icon:hover .main-body {
+    fill: var(--heart-body-color);
+    transition-property: fill;
+    transition: fill 0.3s 0.05s;
+}
+
+.like-icon:active .core{
+    fill: var(--heart-sparks-color);
+     transition: fill 0.3s;
+}
+   
+.like-icon:active .main-body {
+     fill: var(--heart-sparks-color);
+     transition-property: fill;
+     transition: fill 0.3s 0.05s;
+}
+  
+.like-icon.is-liked .core{
+    fill: var(--heart-sparks-color);
+    transition: fill 0.3s;
+}
+   
+.like-icon.is-liked .main-body {
+     fill: var(--heart-sparks-color);
+     transition-property: fill;
+     transition: fill 0.3s 0.05s;
+}
+
+   .like-icon.is-liked .contour {
+    fill: var(--heart-sparks-color);
+    transition-property: fill;
+    transition: fill 0.3s 0.06s;
+  }
+
+  @keyframes heart-change-size {
+    0% {
+      scale: 1;
+    }
+  
+    100% {
+      scale: 1.5;
+    }
+  }
+
+  .like-icon.is-liked .heart {
+    animation: 
+      heart-change-size
+      0.3s
+      0.1s
+      ease-in;
+    transform-origin: center center;
+  }
+
+  @keyframes sparks-flash {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 100%;
+    }
+  }
+  
+  .like-icon.is-liked .sparks {
+    animation: 
+      sparks-flash
+      0.3s
+      0.3s
+      ease-in;
+  }
+  @keyframes cat {
+    0% {
+      filter: saturate(10%);
+    }
+
+    50% {
+      filter: saturate(100%);
+    }
+
+    100% {
+      filter: saturate(10%);
+    }
+  }
+
+  @keyframes forest {
+    0% {
+      filter:hue-rotate(180deg);
+    }
+
+    50% {
+      filter:hue-rotate(0deg);
+    }
+
+    100% {
+      filter:hue-rotate(180deg);
+    }
+  }
+
+  @keyframes mount {
+    0% {
+      filter: contrast(12%);
+    }
+
+    50% {
+      filter: contrast(100%);
+    }
+
+    100% {
+      filter: contrast(12%);
+    }
+  }
+
+  @keyframes tram {
+    0% {
+      filter:sepia(1);
+    }
+
+    50% {
+      filter:sepia(0);
+    }
+
+    100% {
+      filter:sepia(0.9);
+    }
+  }
+
+  @keyframes rock {
+    0% {
+      filter: brightness(40%);
+    }
+
+    50% {
+      filter: brightness(100%);
+    }
+
+    100% {
+      filter: brightness(50%);
+    }
+  }
+
+  @keyframes moving {
+    0% {
+      filter: grayscale(1);
+    }
+
+    50% {
+      filter: grayscale(0);
+    }
+
+    100% {
+      filter: grayscale(0.9);
+    }
+  }
+
+  @keyframes lake {
+    0% {
+      filter: invert(100%);
+    }
+
+    50% {
+      filter: invert(0%);
+    }
+     
+    100% {
+      filter: invert(100%);
+    }
+  }
+
+  @keyframes car {
+    0% {
+      filter: hue-rotate(109deg) invert(1);
+    }
+
+    25% {
+      filter: hue-rotate(109deg) invert(0);
+    }
+
+    50% {
+      filter: hue-rotate(0deg) invert(0);
+    }
+
+    75% {
+      filter: hue-rotate(0deg) invert(1);
+    }
+     
+    100% {
+      filter: hue-rotate(109deg) invert(1);
+    }
+  }

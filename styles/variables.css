@@ -1,1 +1,29 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+--font-family-main: PressStart2P;
+--font-family-accent: Inter;
+--font-card-text-wght: 400;
+--font-card-title-wght: 700;
+--font-hd-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+--font-hd-text-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+--font-main-size: 14px;
+--bckg-img: 
+repeating-linear-gradient(90deg, var(--bckg-color) 0 2px, transparent 2px 4px),
+repeating-linear-gradient(180deg, var(--bckg-color) 0 2px, transparent 2px 4px),
+linear-gradient(180deg, var(--bckg-color-cover-start)0% var(--bckg-start-gradient), var(--bck-color-cover-end)100%);
+--main-color: #000000;
+--outline-logo-color: #fff;
+--heart-contour-color: var(--main-color);
+--heart-sparks-color: #FF0000;
+--heart-body-color: var(heart-sparks-color);
+--heart-core-color: var(--main-color);
+--bckg-color: #d3d3d3;
+--bckg-color-cover-start: #E7E7E7;
+--bck-color-cover-end: #1A1A1A;
+--button-text-color: #fff;
+--outline-logo-color: #fff;
+--bckg-item-color: #fff;
+--bckg-start-gradient: 0.01%;
+--text-shadow: 1px -1px var(--outline-logo-color), 1px 1px  var(--outline-logo-color), -1px 1px  var(--outline-logo-color), -1px -1px  var(--outline-logo-color);
+} 
+
