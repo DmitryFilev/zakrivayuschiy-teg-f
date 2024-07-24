@@ -252,6 +252,7 @@
   transition: scale 0.5s ease-in-out;
   scale: 0 1;
   transform-origin: 0 0;
+  background-color: var(--main-color);
 }
 
 .card__like-button:hover::after {

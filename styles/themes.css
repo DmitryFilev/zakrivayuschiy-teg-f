@@ -29,6 +29,7 @@
 --font-card-text-wght: 465;
 --font-card-title-wght: 785;
 --button-text-color: var(--main-color);
+
 }
 
 @media (prefers-color-scheme: light) {
@@ -42,6 +43,7 @@
     --outline-logo-color: #fff;
     --font-card-text-wght: 400;
     --font-card-title-wght: 700;
+
 }
 }
 
