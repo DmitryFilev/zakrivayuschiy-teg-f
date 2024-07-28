@@ -170,7 +170,7 @@
   outline: 2px solid currentColor;
 }
 
-.img {
+.card-img {
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -263,35 +263,35 @@
   scale: 1 1;
 }
 /*filters*/
-.filter-sepia .img {
+.filter-sepia .card-img {
   filter: sepia(0.9);
 }
 
-.filter-contrast .img {
+.filter-contrast .card-img {
   filter: contrast(12%);
 }
 
-.filter-hue-rotate .img {
+.filter-hue-rotate .card-img {
   filter: hue-rotate(180deg);
 }
 
-.filter-brightness .img {
+.filter-brightness .card-img {
   filter: brightness(50%);
 }
 
-.filter-grayscale .img {
+.filter-grayscale .card-img {
   filter: grayscale(0.9);
 }
 
-.filter-saturate .img {
+.filter-saturate .card-img {
   filter: saturate(23%);
 }
 
-.filter-invert .img {
+.filter-invert .card-img {
   filter: invert(1);
 }
 
-.filter-hue-rotate-invert .img {
+.filter-hue-rotate-invert .card-img {
   filter: hue-rotate(109deg) invert(1);
 }
 /*save-button*/

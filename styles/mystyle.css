@@ -2,6 +2,6 @@
   transition: filter 2s linear;
   }
   
-  .card__img:hover .img{
+  .card__img:hover .card-img{
     filter: none;
   }
