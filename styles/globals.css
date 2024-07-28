@@ -6,7 +6,8 @@
 *::after,
 *::before {
   box-sizing: border-box;
-   color: inherit;
+  color: inherit;
+  transition: inherit;
 }
 
 body {

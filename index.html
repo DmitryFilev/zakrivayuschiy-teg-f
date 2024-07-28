@@ -1,53 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Закрывающий тег</title>
-    <meta name="color-scheme" content="dark light" />
-    <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/animations.css" />
-    <link rel="stylesheet" href="./styles/themes.css" />
-    <link rel="icon" href="./images/favicon.png" sizes="any" />
-    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <meta name="color-scheme" content="dark light" >
+    <link rel="stylesheet" href="./fonts/fonts.css" >
+    <link rel="stylesheet" href="./styles/variables.css" >
+    <link rel="stylesheet" href="./styles/globals.css" >
+    <link rel="stylesheet" href="./styles/style.css" >
+    <link rel="stylesheet" href="./styles/animations.css" >
+    <link rel="stylesheet" href="./styles/themes.css" >
+    <link rel="stylesheet" href="./styles/mystyle.css" >
+    <link rel="icon" href="./images/favicon.png" sizes="any" >
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" >
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" >
     <script src="./scripts/set-theme.js"></script>
   </head>
+
   <body class="page">
     <header class="header">
-      <span class="header__title"> &lt;/HTML&gt; </span>
+      <a class="header__title">&lt;/HTML&gt;</a>
       <h1 class="header__text">закрывающий тег</h1>
       <nav class="theme-menu header__theme-menu">
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
-              Темно
+            <button
+              type="button"
+              data-theme="dark"
+              class="button theme-menu__button"
+            >
+              <span>Темно</span>
             </button>
           </li>
           <li class="theme-menu__item">
             <button
               type="button"
               data-theme="auto"
+              class="button theme-menu__button"
               disabled
-              class="theme-menu__button"
             >
-              Авто
+              <span>Авто</span>
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
-              Светло
+            <button
+              type="button"
+              data-theme="light"
+              class="button theme-menu__button"
+            >
+              <span>Светло</span>
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="main">
       <div class="card-list">
-        <article class="card zero-sprint">
+        <article class="card filter-sepia">
           <!-- 1 -->
           <div class="card__title">
             <h2>Фритрек и нулевой спринт: Подготовка к работе</h2>
@@ -55,10 +65,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n1.jpg"
+              src="images/tram.jpg"
               alt="Ретро трамвай номер 13"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;total recall&gt;</div>
           </div>
           <div class="card__text">
@@ -67,7 +77,7 @@
               основами и настроиться на учёбу. И, возможно, подумать, как новые
               знания могут повлиять на ваше будущее.
             </p>
-            <p class="add-text">
+            <p>
               Нулевой спринт. Выдёргивал какие-то знания из далёкого прошлого
               времён HTML4. Была надежда вначале, что получится проехать с
               ветерком на старых знаниях. Надежда потихоньку угасала. Пришло
@@ -77,10 +87,11 @@
             </p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -104,12 +115,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card first-sprint-begin">
+        <article class="card filter-contrast">
           <!-- 2 -->
           <div class="card__title">
             <h2>1 спринт: Я — чистый лист</h2>
@@ -117,10 +128,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n2.jpg"
+              src="images/mount.jpg"
               alt="Тропа в горы. Йосимити парк"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;plus ultra&gt;</div>
           </div>
           <div class="card__text">
@@ -131,13 +142,14 @@
               за этим ощущением скрываются более глубокие вопросы: с чего
               начать? а вдруг будет слишком сложно? что, если я не справлюсь?
             </p>
-            <p class="add-text">У всего есть начало.</p>
+            <p>У всего есть начало.</p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -161,12 +173,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card first-sprint-end">
+        <article class="card filter-hue-rotate">
           <!-- 3 -->
           <div class="card__title">
             <h2>1 спринт: А если не получится?</h2>
@@ -174,10 +186,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n3.jpg"
+              src="images/tree.jpg"
               alt="Секвойя парк"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;is it necessary?&gt;</div>
           </div>
           <div class="card__text">
@@ -186,17 +198,17 @@
               могла быстро померкнуть и смениться ожиданием провала. Или вы,
               наоборот, могли вдохновиться успехами и поверить в себя.
             </p>
-            <p class="add-text">
+            <p>
               Сдача проекта – небольшой стресс, когда осталась одна попытка, но
               и большой опыт, который помог подкрутить настрой на будущее.
             </p>
           </div>
-
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -220,12 +232,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card second-sprint-begin">
+        <article class="card filter-brightness">
           <!-- 4 -->
           <div class="card__title">
             <h2>2 спринт: Погоня за идеалом</h2>
@@ -233,10 +245,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n4.jpg"
+              src="images/rock.jpg"
               alt="Скала в океане на закате. Мора-бэй"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;mission possible&gt;</div>
           </div>
           <div class="card__text">
@@ -247,13 +259,14 @@
               подвержены перфекционизму и вместо того, чтобы сделать идеально,
               старались просто сделать.
             </p>
-            <p class="add-text">Будущее стало ещё туманней.</p>
+            <p>Будущее стало ещё туманней.</p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -277,12 +290,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card second-sprint-end">
+        <article class="card filter-grayscale">
           <!-- 5 -->
           <div class="card__title">
             <h2>2 спринт: О тех, кто рядом</h2>
@@ -290,10 +303,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n5.jpg"
+              src="images/poosher.jpg"
               alt="Поворот ретро трамвая служащими на кончной остановке"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;it's easier&gt;</div>
           </div>
           <div class="card__text">
@@ -305,17 +318,18 @@
               поддавался. Осваивать что-то новое легче, когда рядом есть
               единомышленники, не правда ли?
             </p>
-            <p class="add-text">
+            <p>
               Поддержка ощущалась постоянно. Особенно на финише спринтов.
               Ревьюверы мягко толкали к сдаче проектов, делились своими
               навыками. Помогли избежать ошибок на следующих этапах.
             </p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -339,12 +353,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card third-sprint-begin">
+        <article class="card filter-saturate">
           <!-- 6 -->
           <div class="card__title">
             <h2>3 спринт: Обходные стратегии</h2>
@@ -352,10 +366,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n6.jpg"
+              src="images/cat.jpg"
               alt="Цветная футуристическая скульптура кота в приморском парке"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;a bilt difficult&gt;</div>
           </div>
           <div class="card__text">
@@ -364,15 +378,14 @@
               вам могло показаться, что решения просто иссякли. Значит, пришло
               время посмотреть на задачу под другим углом.
             </p>
-            <p class="add-text">
-              Понемногу пришли навыки. А за ними и "красотища".
-            </p>
+            <p>Понемногу пришли навыки. А за ними и "красотища".</p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -396,12 +409,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card third-sprint-end">
+        <article class="card filter-invert">
           <!-- 7 -->
           <div class="card__title">
             <h2>3 спринт: Когда опускаются руки</h2>
@@ -409,10 +422,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n7.jpg"
+              src="images/lake.jpg"
               alt="Mirror Lake"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;pleasure&gt;</div>
           </div>
           <div class="card__text">
@@ -423,7 +436,7 @@
               пожить. В такие моменты очень нужна концентрация. Вспомните,
               откуда вы её черпали.
             </p>
-            <p class="add-text">
+            <p>
               Стало тудновато. Проект заставил заново пройти курс, открыть новые
               его краски и рассмотреть подводные камни. Спринт принёс массу
               острых впечатлений от открытий. Когда опускались руки и не было
@@ -433,10 +446,11 @@
             </p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -460,12 +474,12 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button type="button" class="button card__like-button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
-        <article class="card currently">
+        <article class="card filter-hue-rotate-invert">
           <!-- 8 -->
           <div class="card__title">
             <h2>«Сейчас я здесь»</h2>
@@ -473,10 +487,10 @@
           <div class="card__img">
             <img
               class="img"
-              src="images/n8.jpg"
+              src="images/car.jpg"
               alt="Автомобиль Tesla Cybertruck"
               loading="lazy"
-            />
+            >
             <div class="card__logo">&lt;too much&gt;</div>
           </div>
           <div class="card__text">
@@ -488,18 +502,19 @@
               получится, но это тот случай, когда важен сам процесс познания.
               Ведь часто путь — и есть результат.
             </p>
-            <p class="add-text">
+            <p>
               Нет предела сложности… Хочется сказать ИМ - это уже «too much»… Но
               начинаешь осознавать, что цель обучения – это само обучение.
-              Понимаешь, что прикоснулся к фантасическим технологиям. Главное –
+              Понимаешь, что прикоснулся к фантастическим технологиям. Главное –
               движение!
             </p>
           </div>
           <div class="card__footer">
-            <button class="card__icon-button like-icon">
+            <button type="button" class="button card__icon-button">
               <svg
+                class="img like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 -3 40 38"
+                viewBox="-0.5 -1 40 38"
                 width="42px"
                 height="38px"
               >
@@ -523,45 +538,43 @@
                 />
               </svg>
             </button>
-            <button class="card__like-button button">
+            <button class="button card__like-button button curtain">
               <span class="button__text">Like</span>
             </button>
           </div>
         </article>
       </div>
-    </main>
-    <footer class="footer">
       <button
-        class="footer_save-button button"
+        class="button save-button curtain"
         type="button"
         onclick="window['dialog-save-id'].showModal();"
         aria-controls="dialog-save-id"
       >
-        <svg class="footer__icon-svg" viewBox="0 0 40 40">
+        <svg class="save-button_svg" viewBox="0 0 40 40">
           <use href="svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="button__text"> Сохранить на память </span>
+        <span class="button__text"> Сохранить&nbsp;на&nbsp;память </span>
       </button>
       <dialog id="dialog-save-id" class="dialog">
         <div class="dialog-win">
-          <div class="dialog-save">
+          <div class="dialog-title">
             <div class="dialog-floppy">
-              <svg viewBox="0 0 40 40">
+              <svg class="dialog-svg" viewBox="0 0 40 40">
                 <use href="svg/floppy.svg#floppy"></use>
               </svg>
             </div>
             <span class="dialog-text">Вставьте дискету, чтобы продолжить</span>
-            <button
-              type="button"
-              onclick="window['dialog-save-id'].close()"
-              class="button-ok button"
-            >
-              OK
-            </button>
           </div>
+          <button
+            type="button"
+            onclick="window['dialog-save-id'].close()"
+            class="button dialog__ok-button"
+          >
+            <span>OK</span>
+          </button>
         </div>
       </dialog>
-    </footer>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>

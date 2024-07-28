@@ -1,7 +1,7 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 :root {
---font-family-main: PressStart2P;
---font-family-accent: Inter;
+--font-family-main: PressStart2P, sans-serif;
+--font-family-accent: Inter, fantasy, sans-serif;
 --font-card-text-wght: 400;
 --font-card-title-wght: 700;
 --font-hd-title-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);

@@ -1,0 +1,7 @@
+.card__img {
+  transition: filter 2s linear;
+  }
+  
+  .card__img:hover .img{
+    filter: none;
+  }
