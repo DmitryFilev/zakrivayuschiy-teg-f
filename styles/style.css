@@ -319,15 +319,12 @@
 }
 /*dialog*/
 .dialog {
-  bottom: calc(12.6761vw -  15.471rem);
   inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
   background-color: var(--bckg-item-color);
   min-inline-size: clamp(21.3125rem, 21.0484rem + 1.1268vw, 22.0625rem);
-  min-block-size: 191px;
-  padding: 30px clamp(2.5rem, 2.7201rem + -0.939vw, 1.875rem);
+  padding: 30px clamp(1.875rem, 2.7201rem - 0.939vw, 2.5rem);
   border: 2px solid currentColor;
 }
-
 
 .dialog-win {
   display: flex;
@@ -359,7 +356,7 @@
 }
 
 ::backdrop {
-  background-color: var(--bckg-item-color);
+  background-color: #000;
   opacity: 75%;
   z-index: 1;
 }
